@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Variable Scope</title>
+</head>
+<body>
+    <script>
+	  var message = "outside global message";
+	
+	  var otherGlobalVariable = "other global variable";
+		
+	  //create a function with a local variable
+	
+	  //having the same name as the first global variable
+	
+	  function getMessage()
+	
+	  {
+	
+	  var message = "inside local variable";
+	
+	  //the function alerts the message variable
+	
+	  alert(message);
+	
+	  //and it also alerts the second global variable
+	
+	  alert(otherGlobalVariable);
+	
+	  //the function ends here
+	
+	  }
+	
+	  //call the function
+	
+	  getMessage();
+		
+	  //alert the message variable
+	
+	  //(which one will it be, local or global?)
+	
+	  alert(message);
+    </script>
+	
+	  

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	  <html>
+       
+	  <head>
+	  <title>String Replace</title>
+      <script type="text/javascript" src="function.js"></script>
+	  </head>
+	  <body>
+	  <h1>String Match</h1>
+      <p id="para">My name is Usman</p>
+          <input type="text" placeholder ="Match" id="userinput">
+      <br>
+      <button type="submit" onclick="strmatch()" id="demo">click me</button><br>
+      <div id="answer"></div>
+      <div id="upper"></div>
+      <script type="text/javascript">
+          function myfunc() {
+              var input = document.getElementById('userinput');
+              var out=document.getElementById("answer");
+              out.innerHTML="Your Input Length is :"+' '+input.value.length;
+              var upper=document.getElementById("upper");
+              upper.innerHTML="Upper Case :"+" "+input.value.toUpperCase()
+
+
+          } 
+          function strmatch()
+          {
+            var para=document.getElementById("para");
+            var input=document.getElementById("userinput");
+            var rep=document.getElementById("para");
+            rep.innerHTML=para.innerText.replace("Usman",input.value);
+
+          }
+        
+		
+
+      </script>
+      
+
+	 
+		
+	  </body>
+	  </html>

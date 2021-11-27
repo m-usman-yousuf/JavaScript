@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	  <html>
+	  <head>
+	  <title>Lesson 7: Leave Boring Repetitive Stuff to JavaScript with Loops</title>
+	  </head>
+	  <body>
+	  <h1>Lesson 7: for Loop</h1>
+	
+	  <div id="wrapper"></div>
+	  
+      <script type="text/javascript">
+	
+        //Grab the html div by its id attribute
+      
+        //and store it in a var named container
+      
+        var container = document.getElementById("wrapper");
+      
+        //create the var containing the counter
+      
+        //and give it an initial value of 0
+      
+        var numImages = 0;
+      
+        //start the loop: while the number of images is less than or
+      
+        //equal to 10 (loop starts at 0 not 1, so type 9 not 10),
+      
+        //keep cycling and increase the counter by 1
+      
+        while (numImages <= 9)
+      
+        {
+      
+        //this is the block of code to be executed:
+      
+        //build the string to insert in the HTML document
+      
+        //and store it in the newImage var
+      
+        //Take note:make sure the img src corresponds to a real image file
+      
+        var newImage = '<img src="loop.gif" alt="#" />' + numImages;
+          
+        //use the container var that stores the div element
+      
+        //and use innerHTML to insert the string stored in the newImage var
+      
+        //Use shortcut assignment += so previous values do not get wiped off
+      
+        container.innerHTML += newImage;
+      
+        //increase the counter by 1 using the increment operator
+      
+        numImages ++;
+      
+        }
+      
+        </script>
+      
+		
+	  </body>
+	  </html>
